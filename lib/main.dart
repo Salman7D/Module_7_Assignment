@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 main(){
@@ -26,7 +25,28 @@ class ContactListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+
+    const Color appColor = Color(0xFF607D8B);
+    const Color nameColor = Color(0xFFF16F68);
+
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: appColor,
+        centerTitle: true,
+        title: Text(
+          "Contact List",
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+
+          ),
+        ),
+      ),
+
+
+
+    );
   }
 }
 
