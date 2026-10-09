@@ -79,7 +79,34 @@ class ContactListPage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(4)
                               )
                         ),
+                      ),
+
+                      const SizedBox(height: 10),
+
+                      SizedBox(
+                        width: double.infinity,
+                        height: 36,
+
+                        child: ElevatedButton(
+                          onPressed: (){},
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: appColor,
+                            elevation: 0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(4)
+                            )
+                          ), child: const Text(
+                          "Add",
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.white
+
+                          ),
+                        )
+                        
+                        )
                       )
+
                     ],
                   ),
 
