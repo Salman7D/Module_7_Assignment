@@ -63,9 +63,23 @@ class ContactListPage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(4)
                             )
                         ),
+                      ),
+
+                      const SizedBox(height: 20),
+
+                      TextFormField(
+                        initialValue: "01745-777777",
+                        keyboardType: TextInputType.phone,
+                        decoration: InputDecoration(
+                          contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 15
+                          ),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(4)
+                              )
+                        ),
                       )
-
-
                     ],
                   ),
 
