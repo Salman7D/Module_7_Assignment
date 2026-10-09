@@ -33,6 +33,7 @@ class ContactListPage extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: appColor,
+        elevation: 2,
         centerTitle: true,
         title: Text(
           "Contact List",
@@ -44,7 +45,34 @@ class ContactListPage extends StatelessWidget {
         ),
       ),
 
+      body: SafeArea(
+          child: Column(
+            children: [
+              Padding(
+                  padding: const EdgeInsets.all(9),
+                  child: Column(
+                    children: [
+                      TextFormField(
+                        initialValue: "Hasan",
+                        decoration: InputDecoration(
+                          contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 15
+                          ),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(4)
+                            )
+                        ),
+                      )
 
+
+                    ],
+                  ),
+
+              )
+
+            ],
+          ))
 
     );
   }
