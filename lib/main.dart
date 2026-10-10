@@ -142,6 +142,12 @@ class ContactListPage extends StatelessWidget {
                             horizontal: 16,
                             vertical: 5
                           ),
+
+                          leading: const Icon(
+                            Icons.person,
+                            color: Color(0xFF795548),
+                            size: 30,
+                          ),
                         ),
                       );
                     },
