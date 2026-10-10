@@ -167,19 +167,19 @@ class ContactListPage extends StatelessWidget {
                             ),
                           ),
 
-
+                          trailing: const Icon(
+                            Icons.phone,
+                            color: Color(0xFF2196F3),
+                            size: 30,
+                          ),
                         ),
                       );
                     },
                   )
               )
-
             ],
-          ))
-
+          )
+      )
     );
   }
-
-
 }
-
