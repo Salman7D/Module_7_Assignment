@@ -148,6 +148,26 @@ class ContactListPage extends StatelessWidget {
                             color: Color(0xFF795548),
                             size: 30,
                           ),
+
+                          title: Text(
+                            contact["name"]!,
+                            style: const TextStyle(
+                              color: nameColor,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500
+                            ),
+                          ),
+
+                          subtitle: Text(
+                            contact["phone"]!,
+                            style: const TextStyle(
+                              color: Colors.grey,
+                              fontSize: 14,
+
+                            ),
+                          ),
+
+
                         ),
                       );
                     },
