@@ -26,6 +26,14 @@ class ContactListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    final List<Map<String, String>> contacts = [
+      {'name': 'Jawad', 'phone': '01877-777777'},
+      {'name': 'Ferdous', 'phone': '01673-777777'},
+      {'name': 'Hasan', 'phone': '01745-777777'},
+      {'name': 'Hasan', 'phone': '01745-777777'},
+      {'name': 'Hasan', 'phone': '01745-777777'},
+    ];
+
     const Color appColor = Color(0xFF607D8B);
     const Color nameColor = Color(0xFFF16F68);
 
@@ -110,6 +118,34 @@ class ContactListPage extends StatelessWidget {
                     ],
                   ),
 
+              ),
+
+              const SizedBox(height: 20),
+
+              Expanded(
+                  child: ListView.builder(
+                    padding: const EdgeInsets.symmetric(horizontal: 9),
+                    itemCount: contacts.length,
+                    itemBuilder: (context, index) {
+                      final contact = contacts[index];
+
+                      return Card(
+                        color: const Color(0xFFF2F2F2),
+                        elevation: 0,
+                        margin: const EdgeInsets.only(bottom: 5),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.zero
+                        ),
+
+                        child: ListTile(
+                          contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 5
+                          ),
+                        ),
+                      );
+                    },
+                  )
               )
 
             ],
@@ -117,5 +153,7 @@ class ContactListPage extends StatelessWidget {
 
     );
   }
+
+
 }
 
